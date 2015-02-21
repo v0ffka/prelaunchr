@@ -53,7 +53,7 @@
                     <p><%= stop["html"].html_safe %></p>
 
                     <div class="tooltip">
-                        <img src="<%= stop["image"] %>" height="254">
+                        <%= image_tag(stop["image"], :height => "254px") %>
                     </div>
                 </li>
             <% end %>
