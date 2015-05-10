@@ -689,6 +689,7 @@ only screen and (min-device-pixel-ratio: 2) {
 	#home .hero{
 		background: url(/assets/home/hero@2x.jpg) center center no-repeat;
 		background-size: 1610px;
+        background-position-y: -80px;
 	}
 
 	#home .form-wrap .key{
