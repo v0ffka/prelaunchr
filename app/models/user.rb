@@ -13,27 +13,38 @@ class User < ActiveRecord::Base
     REFERRAL_STEPS = [
         {
             'count' => 5,
-            "html" => "Shave<br>Cream",
+            "html" => "10%",
             "class" => "two",
-            "image" =>  "refer/cream-tooltip@2x.png"
+            "tooltip" =>  "BIEN JOUÉ !<br><br>
+CONTINUEZ
+COMME ÇA, THE SKY
+IS THE LIMIT !"
         },
         {
             'count' => 10,
-            "html" => "Truman Handle<br>w/ Blade",
+            "html" => "20%",
             "class" => "three",
-            "image" => "refer/truman@2x.png"
+            "tooltip" => "GÉNIAL !<br><br>
+ALLEZ ON SE
+MOTIVE,
+20% C’EST BIEN MAIS
+30% C’EST TOP !"
         },
         {
             'count' => 25,
-            "html" => "Winston<br>Shave Set",
+            "html" => "30%",
             "class" => "four",
-            "image" => "refer/winston@2x.png"
+            "tooltip" => "FORMIDABLE !<br><br>
+ENCORE UN
+DERNIER EFFORT ET
+C’EST LE JACKPOT !"
         },
         {
             'count' => 50,
-            "html" => "One Year<br>Free Blades",
+            "html" => "50%",
             "class" => "five",
-            "image" => "refer/blade-explain@2x.png"
+            "tooltip" => "MAGNIFIQUE !<br><br>
+UN GRAND MERCI !"
         }
     ]
 

@@ -1,6 +1,6 @@
 <div class="header">
     <div class="content">
-        <p class="logo brandon">Harry&#8217;s</p>
+        <p class="logo brandon">AWANGA</p>
         <p class="byline brandon">THANK YOU FOR SIGNING UP</p>
     </div>
 </div>
@@ -8,12 +8,12 @@
 <div class="hero">
     <div class="page-content clearfix">
         <div class="mammoth">
-            <span class="need brandon">Shaving Is<br>Evolving</span>
+            <span class="need brandon">LA MODE<br>DEVIENT<br>MEILLEURE</span>
         </div>
         <div class="share-wrap">
-            <p class="why brandon">Don't leave your friends behind</p>
-            <p class="title brandon">INVITE FRIENDS &<br>Earn Product</p>
-            <p class="subtitle brandon">Share your unique link via email, Facebook<br>or Twitter and earn Harry's goods for<br>each friend who signs up.</p>
+            <p class="why brandon">FAITES LE SAVOIR À VOS AMIS</p>
+            <p class="title brandon">INVITEZ VOS AMIS ET GAGNEZ<br>JUSQU’À 50% DE RÉDUCTION SUR<br>VOTRE PREMIÈRE COMMANDE</p>
+            <p class="subtitle brandon">C’est tout simple : partagez votre lien unique par mail,<br>Facebook ou Twitter, et soyez récompensé pour chaque<br>ami qui s’inscrit.</p>
             <div class="copy-link brandon"><%= root_url %>?ref=<%= @user.referral_code %></div>
             <% twitter_message = "#Shaving is evolving. Excited for @harrys to launch." %>
             <div class="social-links">
@@ -43,9 +43,9 @@
  %>
 <div class="prizes <% if found %>prize-<%= found["class"] %><% end %>">
     <div class="page-content">
-        <p class="callout brandon">Here's How It Works:</p>
+        <p class="callout brandon">VOTRE RÉDUCTION :</p>
         <ul class="products clearfix">
-            <li class="title brandon"><p class="friends">Friends Joined</p><p class="rewards">Harry's Product</p></li>
+            <li class="title brandon"><p class="friends">NOMBRE D’AMIS<br>VOUS AYANT REJOINT</p><p class="rewards">Réduction sur Awanga</p></li>
             <% stops.each do |stop| %>
                 <li class="product brandon <% if stop["selected"] %>selected<% end %> <% if stop["class"] == 'five' %>last<% end %>">
                     <div class="circle"><%= stop["count"] %></div>
@@ -53,7 +53,7 @@
                     <p><%= stop["html"].html_safe %></p>
 
                     <div class="tooltip">
-                        <%= image_tag(stop["image"], :height => "254px") %>
+                        <%= stop["tooltip"].html_safe%>
                     </div>
                 </li>
             <% end %>
@@ -76,13 +76,10 @@
         %>
 
         <% if referrals_count == 0 %>
-            <p class="place brandon"><span>No</span> friends have joined...Yet!</p>
+            <p class="place brandon"><span>Aucun</span> ami(s) … pour l’instant !</p>
         <% else %>
             <p class="place brandon"><span><%= referrals_count %></span> <%= words %> joined</p>
         <% end %>
-        <p class="check brandon">Keep checking</p>
-
-        <p class="ship brandon">We ship to the U.S. (& Canada Soon)</p>        
-        <a class="policy brandon" href="/privacy-policy" target="_blank">Privacy Policy</a>
+        <p class="check brandon">On se motive !</p>
     </div>
 </div>

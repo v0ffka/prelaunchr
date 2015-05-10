@@ -48,7 +48,8 @@ html.home{
 	width: 100%;
 	height: 446px;
 	background: url(/assets/home/hero.jpg) center center no-repeat;
-	background-size: 1600px 446px;
+	background-size: 1610px;
+    background-position-y: -80px;
 	overflow: hidden;
 	position: relative;
 	letter-spacing: .09em;
@@ -105,6 +106,16 @@ html.home{
     top: 0;
     left: 200px;
     height: 446px;
+}
+
+#home .hero-text .logo {
+    position: absolute;
+    bottom: 0;
+    margin: 0 auto;
+    background: url('home/logo-awanga-blanb-sans-fond-01-01.png') center center no-repeat;
+    background-size: contain;
+    height: 100px;
+    width: 100%;
 }
 
 #home .form-wrap{
@@ -288,7 +299,7 @@ html.home{
 
 #refer .header{
 	height: 50px;
-	background: #074E6F;
+	background: #9CD5D9;
 	width: 100%;
 	overflow:hidden;
 	z-index: 1;
@@ -319,14 +330,14 @@ html.home{
 	margin-right: 14px;
 	letter-spacing: 1px;
 	background: url(/assets/refer/logo.png) 0 0 no-repeat;
-	background-size: 106px 19px;
-	height: 19px;
-	width: 106px;
-	margin-top: 15px;
+	background-size: 192px 35px;
+	height: 35px;
+	width: 192px;
+	margin-top: 7px;
 }
 
 #refer .hero{
-	background: #F1F0EE;
+	background: #e9e9e9;
 	height: 391px;
 	overflow: hidden;
 }
@@ -334,7 +345,7 @@ html.home{
 #refer .mammoth{
 	width: 612px;
 	height: 394px;
-	background: url(/assets/refer/mammoth.png) 0 0 no-repeat;
+	background-color: #e9e9e9;
 	background-size: 610px 394px;
 	overflow: hidden;
 	margin-top: 15px;
@@ -344,13 +355,13 @@ html.home{
 #refer .mammoth .need{
 	color: #FFF;
 	font-size: 38px;
+    font-family: 'Arial', sans-serif;
 	text-transform: uppercase;
 	font-weight: bold;
 	margin: 102px 0 0 72px;
 	display: block;
-	line-height: 56px;
 	letter-spacing: 4px;
-	text-align: center;
+	text-align: left;
 	width: 284px;
 }
 
@@ -358,43 +369,48 @@ html.home{
 	float: right;
 	width: 400px;
 	text-align: center;
-	text-transform: uppercase;
 	letter-spacing: .13em;
 	margin-right: 60px;
 }
 
 #refer .share-wrap .why{
 	font-size: 16px;
-	color: #555556;
-	font-weight: bold;
+	color: #3f3f3f;
 	margin-top: 42px;
+    font-family: 'JosefinSans', sans-serif;
+    font-style: italic;
+    letter-spacing: 0;
 }
 
 #refer .share-wrap .title{
-	font-size: 30px;
-	line-height: 40px;
-	text-transform: uppercase;
+	font-size: 18px;
 	font-weight: bold;
-	color: #074E6F;
+	color: #9CD5D9;
 	margin-top: 18px;
-	letter-spacing: .13em;
+	letter-spacing: 0;
+    font-family: 'Arial', sans-serif;
 }
 
 #refer .share-wrap .subtitle{
-	color: #565656;
-	font-size: 14px;
-	text-transform: none;
+	color: #3f3f3f;
+	font-size: 16px;
 	margin-top: 15px;
+    font-family: 'JosefinSans', sans-serif;
+    font-style: italic;
+    letter-spacing: 0;
 }
 
 #refer .share-wrap .copy-link{
-	border: 1px solid #D1D0C7;
+	border: 1px solid #9CD5D9;
 	background: #FFF;
 	padding: 10px 0;
 	width: 320px;
-	text-transform: none;
 	font-size: 11px;
+    font-family: 'JosefinSans', sans-serif;
+    font-style: italic;
+    letter-spacing: 0;
 	margin: 20px auto 0;
+    color: #3f3f3f;
 }
 
 #refer .share-wrap .social-links{
@@ -443,11 +459,12 @@ html.home{
 #refer .prizes .callout{
 	text-align: center;
 	font-size: 16px;
-	color: #074E6F;
+	color: #3f3f3f;
 	font-weight: bold;
 	margin: 20px 0 0 0;
-	letter-spacing: 2px;
-	text-transform: uppercase;
+    font-family: 'JosefinSans', sans-serif;
+    font-size: 16px;
+    font-style: italic;
 }
 
 #refer .prizes .progress{
@@ -467,7 +484,7 @@ html.home{
 }
 
 #refer .prizes .progress .mover .bar{
-	background: url(/assets/refer/progress-done.png) 0 0 repeat-x;
+	background-color: #9CD5D9;
 	width: 165px;
 	height: 4px;
 	-webkit-background-size: 1px 4px;
@@ -490,31 +507,34 @@ html.home{
 
 #refer .prizes .products li.title{
 	height: 100%;
-	text-transform: uppercase;
-	color: #074E6F;
-	font-weight: 500;
-	font-size: 14px;
+	color: #3f3f3f;
+    font-family: 'JosefinSans', sans-serif;
+    font-size: 16px;
+    font-style: italic;
+    letter-spacing: 0;
 	float: left;
 	margin-right: 68px;
-	width: 165px;
-	font-weight: bold;
+	width: 175px;
 }
 
 #refer .prizes .products li.title .friends{
 	margin-top: 7px;
-	letter-spacing: 2px;
 }
 
 #refer .prizes .products li.title .rewards{
-	margin-top: 45px;
-	letter-spacing: 2px;
+	margin-top: 25px;
+    font-family: 'JosefinSans', sans-serif;
+    font-size: 16px;
+    font-style: italic;
+    color: #9CD5D9;
+    letter-spacing: 0px;
 }
 
 #refer .prizes .products li.product{
 	height: 100%;
 	color: #074E6F;
 	width: 125px;
-	margin-right: 129px;
+	margin-right: 125px;
 	float: left;
 	position: relative;
 }
@@ -523,13 +543,14 @@ html.home{
 	height: 30px;
 	width: 30px;
 	border-radius: 15px;
-	border: 1px solid #DAD9D2;
 	text-align: center;
+    letter-spacing: 1px;
 	line-height: 30px;
-	color: #868282;
+	color: #3f3f3f;
 	overflow: hidden;
-	background: #F1F0EE;
-	font-weight: bold;
+	background: #e9e9e9;
+	font-family: 'JosefinSans', sans-serif;
+    font-style: italic;
 	margin: 0 auto;
 }
 
@@ -556,7 +577,10 @@ html.home{
 
 #refer .prizes .products li.product p{
 	text-align: center;
-	font-weight: 500;
+    font-family: 'JosefinSans', sans-serif;
+    font-style: italic;
+    color: #9CD5D9;
+    margin-top: 20px;
 }
 
 #refer .prizes .products li.product:last-child{
@@ -585,20 +609,23 @@ html.home{
 }
 
 #refer .prizes .products li.product .tooltip{
-	height: 254px;
+	height: 154px;
 	width: 190px;
-	border: 4px solid #074E6F;
+	border: 5px solid #9CD5D9;
 	position: absolute;
 	top: -285px;
 	left: -32px;
 	display: none;
 	background: #FFF;
+    font-family: 'JosefinSans', sans-serif;
+    font-style: italic;
+    font-size: 16px;
+    color: #3f3f3f;
+    text-align: center;
+    padding-top: 100px;
 }
 
-#refer .prizes .products li.product .tooltip img{
-	margin: 0 auto;
-	display: block;
-}
+
 
 #refer .prizes .products li.product:hover .tooltip{
 	display: block;
@@ -606,23 +633,27 @@ html.home{
 
 #refer .prizes p.place{
 	text-align: center;
-	font-size: 16px;
-	color: #074E6F;
+	color: #3f3f3f;
 	width: 100%;
-	font-weight: 500;
+    font-family: 'JosefinSans', sans-serif;
+    font-size: 16px;
+    font-style: italic;
+    letter-spacing: 0;
 	margin-top: 30px;
 }
 
 #refer .prizes p.place span{
-	color: #995F5E;
+	color: #9CD5D9;
 }
 
 #refer .prizes p.check{
 	text-align: center;
-	font-size: 16px;
-	color: #858181;
+	color: #3f3f3f;
 	width: 100%;
-	font-weight: 500;
+    font-family: 'JosefinSans', sans-serif;
+    font-size: 16px;
+    font-style: italic;
+    letter-spacing: 0;
 	margin-top: 5px;
 }
 
@@ -657,7 +688,7 @@ only screen and (-webkit-min-device-pixel-ratio: 2),
 only screen and (min-device-pixel-ratio: 2) {
 	#home .hero{
 		background: url(/assets/home/hero@2x.jpg) center center no-repeat;
-		background-size: 1600px 446px;
+		background-size: 1610px;
 	}
 
 	#home .form-wrap .key{
@@ -667,13 +698,9 @@ only screen and (min-device-pixel-ratio: 2) {
 
 	#refer .header .logo{
 		background: url(/assets/refer/logo@2x.png) 0 0 no-repeat;
-		background-size: 106px 19px;
+		background-size: 192px 35px;
 	}
 
-	#refer .mammoth{
-		background: url(/assets/refer/mammoth@2x.png) 0 0 no-repeat;
-		background-size: 610px 394px;
-	}
 
 	#refer .share-wrap .social-links .fb{
 		background: url(/assets/refer/fb@2x.png);
@@ -687,11 +714,6 @@ only screen and (min-device-pixel-ratio: 2) {
 
 	#refer .prizes .progress{
 		background: url(/assets/refer/progress-bg@2x.png) 0 0 repeat-x;
-		background-size: 1px 4px;
-	}
-
-	#refer .prizes .progress .mover .bar{
-		background: url(/assets/refer/progress-done@2x.png) 0 0 repeat-x;
 		background-size: 1px 4px;
 	}
 
