@@ -11,8 +11,6 @@
 
         <div class="share-wrap">
             <span class="need brandon">LA MODE DEVIENT MEILLEURE</span>
-
-            <p class="why brandon">FAITES LE SAVOIR À VOS AMIS</p>
             <p class="title brandon">INVITEZ VOS AMIS ET GAGNEZ<br>JUSQU’À 50% DE RÉDUCTION SUR<br>VOTRE PREMIÈRE COMMANDE</p>
             <p class="subtitle brandon"><b>C’est tout simple</b> : partagez votre lien unique par mail,<br>Facebook ou Twitter, et soyez récompensé pour<br> chaque ami qui s’inscrit.</p>
             <div class="copy-link brandon"><%= root_url %>?ref=<%= @user.referral_code %></div>
@@ -71,7 +69,7 @@
         <% if referrals_count == 0 %>
             <p class="place brandon"><span>Aucun</span> ami(s) … pour l’instant !</p>
         <% else %>
-            <p class="place brandon"><span><%= referrals_count %></span> amis vous ont rejoint</p>
+            <p class="place brandon"><span><%= referrals_count %></span> ami(s) … pour l’instant !</p>
         <% end %>
         <p class="check brandon">On se motive !</p>
     </div>

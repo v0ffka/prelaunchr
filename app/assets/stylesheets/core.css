@@ -90,13 +90,15 @@ html.home{
     margin-top: 100px;
     padding: 0 35px;
     font-weight: bold;
+    text-align: center;
 }
 
 #home .hero-text p.date{
     font-family: 'Arial', sans-serif;
     font-size: 48px;
     color: #3f3f3f;
-    margin-top: 10px;
+    margin-top: 80px;
+    text-align: center;
     padding: 0 35px;
     font-weight: bold;
 }
@@ -375,13 +377,13 @@ html.home{
 
 #refer .share-wrap .need{
     color: #FFF;
-    font-size: 18px;
+    font-size: 22px;
     font-family: 'Arial', sans-serif;
     text-transform: uppercase;
     font-weight: bold;
-    margin: 20px auto 0 auto;
+    margin: 40px auto 30px auto;
     display: block;
-    letter-spacing: 1px;
+    letter-spacing: 0;
     text-align: center;
     width: 350px;
 }
@@ -618,8 +620,8 @@ html.home{
 
 #refer .prizes .products li.product:hover .circle{
 	color: #FFF;
-	background: #074E6F;
-	border-color: #074E6F;
+	background: #9CD5D9;
+	border-color: #9CD5D9;
 }
 
 #refer .prizes .products li.product .tooltip{
