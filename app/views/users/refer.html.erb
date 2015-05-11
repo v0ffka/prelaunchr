@@ -1,27 +1,30 @@
 <div class="header">
     <div class="content">
         <p class="logo brandon">AWANGA</p>
-        <p class="byline brandon">THANK YOU FOR SIGNING UP</p>
+        <p class="byline brandon">Merci de votre inscription</p>
     </div>
 </div>
 
 <div class="hero">
     <div class="page-content clearfix">
-        <div class="mammoth">
-            <span class="need brandon">LA MODE<br>DEVIENT<br>MEILLEURE</span>
-        </div>
+        <div class="man"></div>
+
         <div class="share-wrap">
+            <span class="need brandon">LA MODE DEVIENT MEILLEURE</span>
+
             <p class="why brandon">FAITES LE SAVOIR À VOS AMIS</p>
             <p class="title brandon">INVITEZ VOS AMIS ET GAGNEZ<br>JUSQU’À 50% DE RÉDUCTION SUR<br>VOTRE PREMIÈRE COMMANDE</p>
             <p class="subtitle brandon">C’est tout simple : partagez votre lien unique par mail,<br>Facebook ou Twitter, et soyez récompensé pour chaque<br>ami qui s’inscrit.</p>
             <div class="copy-link brandon"><%= root_url %>?ref=<%= @user.referral_code %></div>
-            <% twitter_message = "#Shaving is evolving. Excited for @harrys to launch." %>
+            <% twitter_message = "La mode devient meilleure. J'attends le lancement d’@awangaofficial avec impatience #betterclothing" %>
             <div class="social-links">
                 <a href="http://www.facebook.com/sharer/sharer.php?u=<%= CGI::escape(root_url) %>?ref=<%= CGI::escape(@user.referral_code) %>&title=Harrys" class="fb" target="_blank"></a>
                 <div class="sep"></div>
                 <a href="http://twitter.com/share?url=<%= CGI::escape(root_url) %>?ref=<%= CGI::escape(@user.referral_code) %>&text=<%= CGI::escape(twitter_message) %>" class="twit" target="_blank"></a>
             </div>
         </div>
+
+        <div class="woman"></div>
     </div>
 </div>
 
@@ -65,20 +68,10 @@
             </div>
         </div>
 
-        <% 
-            words = ''
-            if referrals_count == 1
-                words = 'friend has'
-            elsif 
-                words = 'friends have'
-            end
-
-        %>
-
         <% if referrals_count == 0 %>
             <p class="place brandon"><span>Aucun</span> ami(s) … pour l’instant !</p>
         <% else %>
-            <p class="place brandon"><span><%= referrals_count %></span> <%= words %> joined</p>
+            <p class="place brandon"><span><%= referrals_count %></span> amis vous ont rejoint</p>
         <% end %>
         <p class="check brandon">On se motive !</p>
     </div>
