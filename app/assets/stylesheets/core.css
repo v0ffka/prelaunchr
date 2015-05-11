@@ -85,6 +85,7 @@ html.home{
 #home .hero-text p.text{
     font-family: 'Arial', sans-serif;
     font-size: 30px;
+    text-transform: uppercase;
     color: #fff;
     margin-top: 100px;
     padding: 0 35px;
@@ -536,7 +537,7 @@ html.home{
 #refer .prizes .products li.title .rewards{
 	margin-top: 25px;
     font-family: 'JosefinSans', sans-serif;
-    font-size: 16px;
+    font-size: 18px;
     font-style: italic;
     color: #9CD5D9;
     letter-spacing: 0px;
@@ -591,6 +592,7 @@ html.home{
 	text-align: center;
     font-family: 'JosefinSans', sans-serif;
     font-style: italic;
+    font-size: 18px;
     color: #9CD5D9;
     margin-top: 20px;
 }
@@ -648,7 +650,7 @@ html.home{
 	color: #3f3f3f;
 	width: 100%;
     font-family: 'JosefinSans', sans-serif;
-    font-size: 16px;
+    font-size: 18px;
     font-style: italic;
     letter-spacing: 0;
 	margin-top: 30px;
@@ -663,7 +665,7 @@ html.home{
 	color: #3f3f3f;
 	width: 100%;
     font-family: 'JosefinSans', sans-serif;
-    font-size: 16px;
+    font-size: 18px;
     font-style: italic;
     letter-spacing: 0;
 	margin-top: 5px;

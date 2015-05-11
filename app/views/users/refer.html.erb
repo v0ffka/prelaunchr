@@ -14,11 +14,11 @@
 
             <p class="why brandon">FAITES LE SAVOIR À VOS AMIS</p>
             <p class="title brandon">INVITEZ VOS AMIS ET GAGNEZ<br>JUSQU’À 50% DE RÉDUCTION SUR<br>VOTRE PREMIÈRE COMMANDE</p>
-            <p class="subtitle brandon">C’est tout simple : partagez votre lien unique par mail,<br>Facebook ou Twitter, et soyez récompensé pour chaque<br>ami qui s’inscrit.</p>
+            <p class="subtitle brandon"><b>C’est tout simple</b> : partagez votre lien unique par mail,<br>Facebook ou Twitter, et soyez récompensé pour<br> chaque ami qui s’inscrit.</p>
             <div class="copy-link brandon"><%= root_url %>?ref=<%= @user.referral_code %></div>
             <% twitter_message = "La mode devient meilleure. J'attends le lancement d’@awangaofficial avec impatience #betterclothing" %>
             <div class="social-links">
-                <a href="http://www.facebook.com/sharer/sharer.php?u=<%= CGI::escape(root_url) %>?ref=<%= CGI::escape(@user.referral_code) %>&title=Harrys" class="fb" target="_blank"></a>
+                <a href="http://www.facebook.com/sharer/sharer.php?u=<%= CGI::escape(root_url) %>?ref=<%= CGI::escape(@user.referral_code) %>&title=awanga" class="fb" target="_blank"></a>
                 <div class="sep"></div>
                 <a href="http://twitter.com/share?url=<%= CGI::escape(root_url) %>?ref=<%= CGI::escape(@user.referral_code) %>&text=<%= CGI::escape(twitter_message) %>" class="twit" target="_blank"></a>
             </div>
