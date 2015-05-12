@@ -84,22 +84,22 @@ html.home{
 
 #home .hero-text p.text{
     font-family: 'Arial', sans-serif;
-    font-size: 30px;
+    font-size: 33px;
     text-transform: uppercase;
     color: #fff;
     margin-top: 100px;
-    padding: 0 35px;
+    padding: 0 15px;
     font-weight: bold;
-    text-align: center;
+    text-align: left;
 }
 
 #home .hero-text p.date{
     font-family: 'Arial', sans-serif;
-    font-size: 48px;
+    font-size: 57px;
     color: #3f3f3f;
-    margin-top: 80px;
-    text-align: center;
-    padding: 0 35px;
+    margin-top: 5px;
+    text-align: left;
+    padding: 0 15px;
     font-weight: bold;
 }
 
@@ -118,7 +118,7 @@ html.home{
     margin: 0 auto;
     background: url('home/logo-awanga-blanb-sans-fond-01-01.png') center center no-repeat;
     background-size: contain;
-    height: 100px;
+    height: 80px;
     width: 100%;
 }
 
