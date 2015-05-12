@@ -44,9 +44,9 @@
  %>
 <div class="prizes <% if found %>prize-<%= found["class"] %><% end %>">
     <div class="page-content">
-        <p class="callout brandon">VOTRE RÉDUCTION :</p>
+        <p class="callout brandon">VOTRE CRÉDITS :</p>
         <ul class="products clearfix">
-            <li class="title brandon"><p class="friends">NOMBRE D’AMIS<br>VOUS AYANT REJOINT</p><p class="rewards">Réduction sur Awanga</p></li>
+            <li class="title brandon"><p class="friends">NOMBRE D’AMIS<br>VOUS AYANT REJOINT</p><p class="rewards">Crédits sur Awanga</p></li>
             <% stops.each do |stop| %>
                 <li class="product brandon <% if stop["selected"] %>selected<% end %> <% if stop["class"] == 'five' %>last<% end %>">
                     <div class="circle"><%= stop["count"] %></div>

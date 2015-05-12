@@ -13,7 +13,7 @@ class User < ActiveRecord::Base
     REFERRAL_STEPS = [
         {
             'count' => 5,
-            "html" => "10%",
+            "html" => "€10",
             "class" => "two",
             "tooltip" =>  "BIEN JOUÉ !<br><br>
 CONTINUEZ
@@ -22,7 +22,7 @@ IS THE LIMIT !"
         },
         {
             'count' => 10,
-            "html" => "20%",
+            "html" => "€20",
             "class" => "three",
             "tooltip" => "GÉNIAL !<br><br>
 ALLEZ ON SE
@@ -32,7 +32,7 @@ MOTIVE,
         },
         {
             'count' => 25,
-            "html" => "30%",
+            "html" => "€30",
             "class" => "four",
             "tooltip" => "FORMIDABLE !<br><br>
 ENCORE UN
@@ -41,7 +41,7 @@ C’EST LE JACKPOT !"
         },
         {
             'count' => 50,
-            "html" => "50%",
+            "html" => "€50",
             "class" => "five",
             "tooltip" => "MAGNIFIQUE !<br><br>
 UN GRAND MERCI !"
